@@ -23,14 +23,21 @@ class ClassComponent extends Component {
 				<h1>I am Class-based Component</h1>
 				{this.props.text2}
 				<hr />
-				<input type="text"
-					onChange={this.update.bind(this)} /> 
+				<NewWidget update={this.update.bind(this)} />
 				<h3>
 					{this.state.msg} - {this.state.dog}
 				</h3>
 			</div>
 		);
 	}
+}
+
+// {update} -> update = props.update
+const NewWidget = ({update}) => {
+	return (
+		<input type="text"
+			onChange={update} /> 
+	);
 }
 
 // stateless function component

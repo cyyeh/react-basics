@@ -5,3 +5,4 @@
 3. Display output in React with a Component's render method
 4. Set properties on React Component
 5. Manage React Component State with `setState`
+6. Use React Components as children for other components
