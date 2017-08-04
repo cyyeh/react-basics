@@ -1,40 +1,27 @@
 import React, { Component } from 'react';
 
 // classbased component
-class ClassComponent extends Component {
+class App extends Component {
 	render() {
 		// return outputs with two more pair of tags needs 
 		// parenthesis and wrap them with div parent node
 		return (
 			<div>
 				<h1>I am Class-based Component</h1>
-				{this.props.text2}
+				<h3>This is another statement.</h3>
+				{this.props.txt}
+				{this.props.cat}
 			</div>
 		);
 	}
 }
 
-// stateless function component
-const StatelessComponent = (props) => {
-	// return outputs with two more pair of tags needs 
-	// parenthesis and wrap them with div parent node
-	return (
-		<div>
-			<h1>I am stateless function component</h1>
-			{props.txt}
-			<ClassComponent text2={props.txt}/>
-			{props.cat}
-		</div>
-	);
+App.PropTypes = {
+	dog: React.PropTypes.string.isRequired
 }
 
-StatelessComponent.propTypes = {
-	txt: React.PropTypes.string,
-	cat: React.PropTypes.number.isRequired
+App.defaultProps = {
+	cat: 'This is default Props'
 }
 
-StatelessComponent.defaultProps = {
-	cat: 100
-}
-
-export default StatelessComponent;
+export default App;
