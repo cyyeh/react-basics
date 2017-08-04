@@ -1,26 +1,17 @@
 import React, { Component } from 'react';
 
 // classbased component
-class ClassComponent extends Component {
+class App extends Component {
 	render() {
 		// return outputs with two more pair of tags needs 
 		// parenthesis and wrap them with div parent node
 		return (
-			<h1>I am Class-based Component</h1>
+			<div>
+				<h1>I am Class-based Component</h1>
+				<h3>This is another statement.</h3>
+			</div>
 		);
 	}
 }
 
-// stateless function component
-const StatelessComponent = () => {
-	// return outputs with two more pair of tags needs 
-	// parenthesis and wrap them with div parent node
-	return (
-		<div>
-			<h1>I am stateless function component</h1>
-			<ClassComponent />
-		</div>
-	);
-}
-
-export default StatelessComponent;
+export default App;
