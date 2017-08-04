@@ -6,3 +6,4 @@
 4. Set properties on React Component
 5. Manage React Component State with `setState`
 6. Use React Components as children for other components
+7. Access nested data with React's `props.children`
