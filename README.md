@@ -10,3 +10,4 @@
 8. Add custom propType validation to React Components
 9. Normalize events with React synthetic event system
 10. Use React `ref` to Get a Reference to Specific Component
+11. Understand the React Component Lifecycle Methods
