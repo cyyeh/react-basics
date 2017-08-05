@@ -14,3 +14,4 @@
 12. Manage React Component State with Lifecycle Methods
 13. Control React Component Updates When New Props Are Received
 14. Use `map` to Create React Components from Arrays of Data
+15. Compose React Component Behavior with Higher Order Components
